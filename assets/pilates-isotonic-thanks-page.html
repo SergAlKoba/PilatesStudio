@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/thanks.css">
+</head>
+<body>
+
+<!-- build:section layout.header-->
+<!-- /build -->
+
+<div class="wrapper">
+
+    <section class="info">
+        <div class="container">
+            <h2>Спасибо, что приобрели мой воркшоп <span>"Работа с изотоническим кольцом"</span></h2>
+            <div class="info-content">
+                <img src="../img/col-2.png" alt="" class="col-2">
+                <img src="../img/col.png" alt="" class="col-1">
+                <img src="../img/thanks-img.png" alt="" class="thanks-img">
+                <div class="course">
+                    <div class="form">
+                        <h4>Укажите E-mail, на который мы вышлем вам видеоматериал</h4>
+                        <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfGoJ3GdillKfxtXFAGyt8qNkv0RvLZF1VtRqcKTNrMRbhtIg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="ss-form-question errorbox-good" role="listitem">
+                                <div dir="auto" class="ss-item ss-item-required ss-text">
+                                    <div class="ss-form-entry">
+                                        <input type="email" name="entry.1959584722" placeholder="Ваш E-Mail noname@*.*" value="" class="ss-q-short" id="entry_1959584722" dir="auto" aria-label="Вопрос без заголовка  Укажите действительный адрес эл. почты" aria-required="true" required="" title="Укажите действительный адрес эл. почты">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-form-question errorbox-good hid-field" style="display: none;" role="listitem">
+                                <div dir="auto" class="ss-item  ss-text">
+                                    <div class="ss-form-entry">
+                                        <input type="text" name="entry.1317894754" value="Работа с изотоническим кольцом" class="ss-q-short" id="entry_1317894754" dir="auto" aria-label="Название курса  " title="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-form-question errorbox-good hid-field" style="display: none;" role="listitem">
+                                <div dir="auto" class="ss-item  ss-text">
+                                    <div class="ss-form-entry">
+                                        <input type="text" name="entry.346538495" value="499" class="ss-q-short" id="entry_346538495" dir="auto" aria-label="Стоимость курса  " title="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-item ss-navigate">
+                                <input type="submit" name="submit" value="Отправить" id="ss-submit" class="jfk-button jfk-button-action ">
+                            </div>
+                        </form>
+                        <h4>После подтверждения оплаты банком, на указанный вами E-Mail будет выслан видеоматериал</h4>
+                        <p>Если письма нет в папке /<span>ВХОДЯШИЕ</span>/ проверьте папку /<span>СПАМ</span>/</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<script src="../js/readmore.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/thanks.min.js"></script>
+
+<iframe name="hidden_iframe" id="hidden_iframe"
+    style="display:none;" onload="if(submitted)
+        {
+            $('.popup-sencs2').addClass('active');
+            $('.ss-q-short').each(function () {
+                $(this).val('');
+            });
+            $('.ss-q-long').each(function () {
+                $(this).val('');
+            });
+
+            setTimeout(function () {
+                $('.popup-sencs2').removeClass('active');
+            }, 5000);
+
+}"></iframe>
+
+</body>
+</html>

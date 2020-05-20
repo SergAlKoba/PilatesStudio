@@ -1,0 +1,184 @@
+header{
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+    .header{
+        background: #fafafa;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    .header-content{
+        padding: 10px 0;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            text-align: left;
+            display: inline-block;
+            img{
+                width: 75px;
+                margin-bottom: 5px;
+                transition: all 0.5s;
+            }
+            span{
+                display: block;
+                font-size: 8px;
+                color: #070707;
+                line-height: 12px;
+                transition: all 0.5s;
+            }
+        }
+        .fit-tv{
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 400;
+            line-height: 22px;
+            border-radius: 5px;
+            position: relative;
+            display: inline-block;
+            padding: 7px 40px 5px 10px;
+            border: 1px solid #d3571a;
+            background-color: #d3571a;
+            box-shadow: 0 6px 8px rgba(136,136,136,0.5);
+            transition: all 0.5s;
+            &:hover{
+                color: #d3571a;
+                background-color: transparent;
+                &:after{
+                    background: url('../img/yuotube-icon2-hover.png') no-repeat 50% 50%;
+                    background-size: cover;
+                }
+            }
+            &:after{
+                content: '';
+                top: 50%;
+                right: 6px;
+                width: 25px;
+                height: 17px;
+                position: absolute;
+                background: url('../img/yuotube-icon2.png') no-repeat 50% 50%;
+                background-size: cover;
+                transform: translate(0, -50%);
+                transition: all 0.5s;
+            }
+        }
+        .sosial{
+            display: none;
+        }
+    }
+}
+
+header.active{
+    .header-content {
+        padding: 10px 0;
+        .logo {
+            img {
+                width: 94px;
+                margin-bottom: 0px;
+            }
+            span{
+                opacity: 0;
+                font-size: 6px;
+                line-height: 8px;
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        .header-content {
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo {
+                img {
+                    width: 100px;
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 9px;
+                    line-height: 14px;
+                }
+            }
+            .fit-tv {
+                font-size: 18px;
+                line-height: 30px;
+                padding: 7px 56px 5px 20px;
+                transform: translate(80%, -3px);
+                &::after{
+                    right: 16px;
+                    width: 30px;
+                    height: 21px;
+                }
+            }
+            .sosial{
+                display: block;
+                margin-right: 60px;
+                li{
+                    margin: 0 7px;
+                    display: inline-block;
+                    a{
+                        display: inline-block;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: rotate(360deg) scale(1.1);
+                        }
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+
+    header {
+        .header{
+            background: #ffffff;
+        }
+        .header-content {
+            padding: 20px;
+            .logo {
+                text-align: left;
+            }
+            .fit-tv {
+                transform: translate(185%, -6px);
+            }
+            nav {
+                transform: translate(-11px, 0);
+                li {
+                    margin: 0 10px;
+                    a {
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding-bottom: 6px;
+                    }
+                }
+            }
+            .sosial {
+                margin-right: 75px;
+                li {
+                    margin: 0 9px;
+                }
+            }
+            .manu-open {
+                top: 46%;
+                right: 20px;
+            }
+        }
+    }
+
+}
