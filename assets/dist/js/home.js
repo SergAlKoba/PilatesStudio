@@ -108,12 +108,12 @@ $(document).ready(function(){
         $(this).find('img').attr('src', $(this).data('item'));
     })
 
-    $(".menu").on("click","a", function (event) {
-		event.preventDefault();
-        var id  = $(this).data('href'),
-            top = $(id).offset().top -100;
-		$('body,html').animate({scrollTop: top}, 500);
-    });
+    // $(".menu").on("click","a", function (event) {
+	// 	event.preventDefault();
+    //     var id  = $(this).data('href'),
+    //         top = $(id).offset().top -100;
+	// 	$('body,html').animate({scrollTop: top}, 500);
+    // });
 
     $(".price-top").on("click", function (event) {
 		event.preventDefault();
