@@ -42,6 +42,7 @@ grunt.initConfig({
 				'../markup/js/payment.min.js': ['dist/js/payment.js'],
 				'../markup/js/thanks.min.js': ['dist/js/thanks.js'],
 				'../markup/js/price.min.js': ['dist/js/price.js'],
+				'../markup/js/bot.min.js': ['dist/js/bot.js'],
 				'../markup/js/contacts.min.js': ['dist/js/contacts.js'],
 				'../markup/js/reviews.min.js': ['dist/js/reviews.js'],
 			}

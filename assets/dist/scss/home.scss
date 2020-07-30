@@ -2,6 +2,8 @@
 @import "libs/slick";
 @import "libs/animate";
 
+
+
 .sale{
     display: block;   
 }
@@ -1914,6 +1916,222 @@
     display: none !important;
 }
 
+.bot{
+    overflow: hidden;
+    padding: 0 0 65px;
+    position: relative;
+    &::after{
+        content: '';
+        top: -20px;
+        left: 0;
+        z-index: 0;
+        opacity: 0.6;
+        width: 100%;
+        height: 95%;
+        position: absolute;
+        background: url('../img/bot-back.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .title{
+        margin-bottom: 10px;
+        text-align: center;
+        h2{
+            color: #050001;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            span{
+                color: #e31111;
+            }
+            b{
+                font-weight: 400;
+            }
+        }
+    }
+    .bot-content{
+        .qRcode{
+            z-index: 2;
+            display: none;
+            position: relative;
+        }
+        .messenger{
+            z-index: 2;
+            width: 170px;
+            position: relative;
+            p{
+                color: #000000;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            img{
+                width: 75px;
+                display: block;
+                margin: 0 auto 5px; 
+            }
+            ul{
+                text-align: center;
+                margin-bottom: 10px;
+                li{
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        width: 133px;
+                        height: 45px;
+                        display: flex;
+                        border-radius: 5px;
+                        align-items: center;
+                        background: #000000;
+                        justify-content: center;
+                        img{
+                            width: 20px;
+                            margin: 0 10px 0 0;
+                            display: inline-block;
+                        }
+                        span{
+                            color: #fff;
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .desc{
+                    display: none;
+                }
+            }
+            b{
+                display: block;
+                color: #000000;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+        .bot-img{
+            z-index: 1;
+            width: 330px;
+            right: -98px;
+            bottom: -60px;
+            position: absolute;
+            img{
+                width: 100%;
+                position: relative;
+            }
+              
+              .view {
+                top: 120px;
+                right: 112px;
+                position: absolute;
+                -webkit-perspective: 400;
+                        perspective: 400;
+              }
+              
+              .plane {
+                width: 120px;
+                height: 120px;
+                -webkit-transform-style: preserve-3d;
+                        transform-style: preserve-3d;
+              }
+              .plane.main {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                -webkit-transform: rotateX(60deg) rotateZ(-30deg);
+                        transform: rotateX(60deg) rotateZ(-30deg);
+                -webkit-animation: rotate 20s infinite linear;
+                        animation: rotate 20s infinite linear;
+              }
+              .plane.main .circle {
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                -webkit-transform-style: preserve-3d;
+                        transform-style: preserve-3d;
+                border-radius: 100%;
+                box-sizing: border-box;
+                box-shadow: 0 0 60px #058cff, inset 0 0 60px #167ee8;
+              }
+              .plane.main .circle::before, .plane.main .circle::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 10%;
+                height: 10%;
+                border-radius: 100%;
+                background: #3790ff;
+                box-sizing: border-box;
+                box-shadow: 0 0 60px 2px #3790ff;
+              }
+              .plane.main .circle::before {
+                -webkit-transform: translateZ(-90px);
+                        transform: translateZ(-90px);
+              }
+              .plane.main .circle::after {
+                -webkit-transform: translateZ(90px);
+                        transform: translateZ(90px);
+              }
+              .plane.main .circle:nth-child(1) {
+                -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
+                        transform: rotateZ(72deg) rotateX(63.435deg);
+              }
+              .plane.main .circle:nth-child(2) {
+                -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
+                        transform: rotateZ(144deg) rotateX(63.435deg);
+              }
+              .plane.main .circle:nth-child(3) {
+                -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
+                        transform: rotateZ(216deg) rotateX(63.435deg);
+              }
+              .plane.main .circle:nth-child(4) {
+                -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
+                        transform: rotateZ(288deg) rotateX(63.435deg);
+              }
+              .plane.main .circle:nth-child(5) {
+                -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
+                        transform: rotateZ(360deg) rotateX(63.435deg);
+              }
+              
+              @-webkit-keyframes rotate {
+                0% {
+                  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+                          transform: rotateX(0) rotateY(0) rotateZ(0);
+                }
+                100% {
+                  -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                }
+              }
+              
+              @keyframes rotate {
+                0% {
+                  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+                          transform: rotateX(0) rotateY(0) rotateZ(0);
+                }
+                100% {
+                  -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                }
+              }
+              
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
 
   .sale{
@@ -2469,6 +2687,34 @@
         }
         .form{
             margin: 0;
+        }
+    }
+  }
+
+  .bot{    
+    padding: 45px 0 65px;
+    .title {
+        text-align: left;
+        margin-bottom: 65px;
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            b{
+                display: block;
+                margin-left: 42%;
+            }
+        }
+    }
+    .bot-content{
+        .messenger{
+            margin-left: 80px;
+        }
+        .bot-img {
+            right: 7px;
+            width: 340px;
+            bottom: -70px;
         }
     }
   }
@@ -3226,6 +3472,43 @@
         }
     }
 
+    .bot{
+        padding: 40px 0 40px;
+        .title {
+            h2 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+        .bot-content {
+            .messenger {
+                width: 230px;
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                }
+                img {
+                    width: 130px;
+                }
+                ul {
+                    margin-bottom: 12px;
+                    li{
+                        a{
+                            width: 160px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+            .bot-img {
+                right: 110px;
+                width: 400px;
+                bottom: -70px;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -3510,6 +3793,48 @@
             margin: 0 10%;
             .form {
                 width: 450px;
+            }
+        }
+    }
+
+    .bot {
+        padding: 0 0 100px;
+        .title {
+            h2 {
+                margin-bottom: 100px;
+            }
+        }
+        .bot-content {
+            display: flex;
+            .qRcode{
+                width: 260px;
+                display: block;
+                margin-left: 80px;
+                text-align: center;
+                img{
+                    width: 100%;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                }
+                p{
+                    color: #000000;
+                    font-size: 20px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+            .messenger{
+                margin-top: 10px;
+                margin-left: 70px;
+            }
+            .bot-img {
+                right: 40px;
+                width: 475px;
+                bottom: -100px;
+                .view {
+                    top: 145px;
+                    right: 125px;
+                }
             }
         }
     }
@@ -4147,6 +4472,61 @@
         }
     }
 
+    .bot{
+        padding: 0 0 140px;
+        .title {
+            h2 {
+                font-size: 50px;
+                line-height: 60px;
+                margin-bottom: 20px;
+            }
+        }
+        .bot-content {
+            .qRcode {
+                width: 300px;
+                display: block;
+                margin-left: 80px;
+            }
+            .messenger {
+                width: 280px;
+                margin-top: 5px;
+                margin-left: 110px;
+                p {
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+                img {
+                    width: 145px;
+                    margin: 0 auto 0;
+                }
+                ul{
+                    li {
+                        a {
+                            width: 220px;
+                            height: 60px;
+                            span{
+                                font-size: 20px;
+                                line-height: 22px;
+                            }
+                            img{
+                                width: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+            .bot-img {
+                right: 40px;
+                width: 520px;
+                bottom: -148px;
+                .view {
+                    top: 155px;
+                    right: 130px;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1600px) {
@@ -4229,6 +4609,40 @@
             top: 4%;
             right: -18%;
             width: 462px;
+        }
+    }
+
+    .bot {
+        .bot-content {
+            .bot-img {
+                right: -190px;
+                width: 575px;
+                bottom: -148px;
+                .view {
+                    top: 170px;
+                    right: 135px;
+                }
+            }
+            .qRcode {
+                width: 340px;
+                display: block;
+                margin-left: 20px;
+                p {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+            }
+            .messenger {
+                margin-left: 165px;
+                p {
+                    font-size: 26px;
+                    line-height: 28px;
+                }
+                b {
+                    font-size: 26px;
+                    line-height: 36px;
+                }
+            }
         }
     }
 
