@@ -64,6 +64,13 @@ header{
                 transition: all 0.5s;
             }
         }
+        .fit-img{
+            width: 40px;
+            transition: all 0.5s;
+            img{
+                width: 100%;
+            }
+        }
         .sosial{
             display: none;
         }
@@ -84,6 +91,9 @@ header.active{
                 line-height: 8px;
                 margin-top: -10px;
             }
+        }
+        .fit-img{
+            width: 30px;
         }
     }
 }
@@ -116,6 +126,13 @@ header.active{
                     width: 30px;
                     height: 21px;
                 }
+            }
+            .fit-img{
+                top: 50%;
+                right: 30%;
+                width: 52px;
+                position: absolute;
+                transform: translate(0, -50%);
             }
             .sosial{
                 display: block;
@@ -156,6 +173,9 @@ header.active{
             }
             .fit-tv {
                 transform: translate(185%, -6px);
+            }
+            .fit-img {
+                right: 25%;
             }
             nav {
                 transform: translate(-11px, 0);

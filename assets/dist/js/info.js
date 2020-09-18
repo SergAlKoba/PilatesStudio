@@ -12,6 +12,16 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    $('.currency').find('li').on('click', function(){
+        var sun = $(this).data('sun');
+        var currency = $(this).data('currency');
+        $(this).parent('.currency').find('li').removeClass('active');
+        $(this).addClass('active');
+        console.log($(this).parent('.currency').prev('.buy-content').find('.uan span'));
+        $(this).parent('.currency').prev('.buy-content').find('.uan span').html(currency);
+        $(this).parent('.currency').prev('.buy-content').find('.uan strong').animateNumber({ number: sun });
+    });
+
     $('.course .text').readmore({
         speed: 175,
         maxHeight: 128,

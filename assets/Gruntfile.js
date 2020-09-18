@@ -106,6 +106,7 @@ grunt.initConfig({
                     layout: {
 						header: '<%= fixturesPath %>/templates/header.html',
 						header_tv: '<%= fixturesPath %>/templates/header-tv.html',
+						header_reward: '<%= fixturesPath %>/templates/header_reward.html',
                     	footer: '<%= fixturesPath %>/templates/footer.html'
 					}
                 },

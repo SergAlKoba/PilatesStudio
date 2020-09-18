@@ -99,7 +99,7 @@
         }
         .course{
             .course-items{
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 .course-item{
                     padding: 10px;
                     margin-bottom: 10px;
@@ -131,6 +131,104 @@
                         strong{
                             color: #e81c1c;
                             font-family: 'Conv_CANDARAB';
+                        }
+                    }
+                }
+            }
+            .sum{
+                z-index: 9;
+                position: relative;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                background: #ffffff;
+                background-color: #ffffff;
+                box-shadow: 0 2px 8px rgba(0, 21, 0, 0.5);
+                .buy-content{
+                    display: flex;
+                    margin-bottom: 10px;
+                    justify-content: space-between;
+                    .price-sum{
+                        li{
+                            margin-bottom: 5px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }  
+                        }
+                        .usd{
+                            padding-right: 12px;
+                            position: relative;
+                            strong {
+                                color: #282828;
+                                font-size: 32px;
+                                line-height: 30px;
+                                display: inline-block;
+                            }
+                            i{
+                                top: -5px;
+                                right: -4px;
+                                font-size: 30px;
+                                color: #3e8604;
+                                font-style: normal;
+                                position: absolute;
+                            }
+                        }
+                        .uan{
+                            font-size: 30px;
+                            color: #282828;
+                            font-weight: 700;
+                            line-height: 34px;
+                            display: inline-block;
+                            span{
+                                font-size: 18px;
+                                color: #d3571a;
+                                font-weight: 400;
+                                line-height: 24px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .buy{
+                        color: #e92626;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        display: inline-block;
+                    }
+                }
+                .currency{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        margin: 0 3px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        a{
+                            color: #282828;
+                            font-size: 19px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            padding: 4px 8px 0;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            transition: all 0.3s;
+                            &:hover{
+                                color: #6fa544;
+                            }
+                        }
+                    }
+                    li.active{
+                        a{
+                            color: #ffffff;
+                            background: #6fa544;
+                            &:hover{
+                                color: #ffffff;
+                                background: #6fa544;
+                            }
                         }
                     }
                 }
@@ -461,7 +559,7 @@
             .course{
                 width: 48%;
                 .course-items {
-                    margin-bottom: 60px;
+                    margin-bottom: 10px;
                 }
                 .form{
                     margin-bottom: 0;
@@ -548,7 +646,7 @@
             .course {
                 width: 45%;
                 .course-items{
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     .course-item {
                         padding: 15px;
                         &:last-child{
@@ -566,12 +664,80 @@
                 .form {
                     padding: 20px 20px 15px;
                 }
+                .sum {
+                    margin-bottom: 30px;
+                    .buy-content{
+                        .price-sum {
+                            .usd {
+                                strong {
+                                    font-size: 40px;
+                                    line-height: 44px;
+                                }
+                                i{
+                                    top: -10px;
+                                    right: -10px;
+                                    font-size: 36px;
+                                }
+                            }
+                            .uan{
+                                font-size: 38px;
+                                line-height: 42px;
+                                span {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                        .buy{
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
             }
         }
         .col {
             width: 550px;
             bottom: -19%;
             position: absolute;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .info {
+        .info-content {
+            .course {
+                .sum {
+                    padding: 15px;
+                    .buy-content {
+                        margin-bottom: 12px;
+                        .buy {
+                            font-size: 28px;
+                            line-height: 42px;
+                        }
+                        .price-sum {
+                            .uan {
+                                font-size: 45px;
+                                line-height: 46px;
+                                span {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                    .currency {
+                        li {
+                            margin: 0 8px;
+                            a{
+                                font-size: 24px;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -614,7 +780,7 @@
             .course {
                 width: 40%;
                 .course-items{
-                    margin-bottom: 60px;
+                    margin-bottom: 10px;
                     .course-item {
                         padding: 25px;
                         &:last-child{
@@ -632,6 +798,10 @@
                 }
                 .form {
                     padding: 30px 40px 20px;
+                }
+                .sum {
+                    padding: 25px;
+                    margin-bottom: 60px;
                 }
             }
         }

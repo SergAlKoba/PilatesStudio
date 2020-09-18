@@ -1265,6 +1265,7 @@
                 .sosial{
                     left: 50%;
                     z-index: 1;
+                    opacity: 0;
                     width: 100%;
                     bottom: 40px;
                     position: absolute;
@@ -1296,6 +1297,7 @@
                     }
                 }
                 .sosial.active{
+                    opacity: 1;
                     li{
                         transform: translate(0, 0);
                     }
