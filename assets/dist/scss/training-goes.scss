@@ -78,6 +78,17 @@ header{
     margin-bottom: 20px;
 }
 
+.issue-certificate span{
+    display: block;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 14px;
+    text-align: center;
+}
+
 .img-ol{
     width: 100%;
     text-align: center;
@@ -154,6 +165,26 @@ header{
 .other-text-two a{
 	color: #e92626;
 }
+
+.ten-reasons a {
+    display: table;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 20px auto 0;
+    border-radius: 24px;
+    padding: 6px 20px 4px;
+    background-color: #d3571a;
+    border: 1px solid #d3571a;
+    box-shadow: 0 6px 8px rgba(136,136,136,0.5);
+    transition: all 0.3s;
+    &:hover{
+        color: #d3571a;
+        background: #ffffff;
+    }
+}
+
 .ten-reasons .img-kont img{
 	width: 100%;
 }
@@ -604,7 +635,7 @@ footer {
         width: 50%;
     }
     .img-sertificat .ol{
-        width: 60%;
+        width: 50%;
     }
     .contacts-bg {
         width: 125%;
@@ -645,6 +676,12 @@ footer {
         font-size: 12px;
         line-height: 14px;
     }
+
+    .issue-certificate span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
     .img-ol span {
         font-size: 12px;
         line-height: 14px;
@@ -654,6 +691,11 @@ footer {
         line-height: 14px;
     }
     .img-sertificat a {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 8px 35px 6px;
+    }
+    .ten-reasons a {
         font-size: 18px;
         line-height: 28px;
         padding: 8px 35px 6px;
@@ -753,6 +795,12 @@ footer {
         font-size: 15px;
         line-height: 18px;
     }
+
+    .issue-certificate span {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
     .img-ol span {
         font-size: 15px;
         line-height: 18px;
@@ -830,4 +878,18 @@ footer {
 		}
 	}
     
+}
+
+@media screen and (min-width: 1550px) {
+
+    .img-ol {
+        .ol {
+            width: 38%;
+        }
+    }
+
+    .img-sertificat .ol {
+        width: 38%;
+    }
+
 }
