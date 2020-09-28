@@ -12,8 +12,6 @@ $(document).ready(function(){
     });
 
     $(".fix-menu a").click(function () {
-        $('.main-menu').removeClass('active');
-        $('.manu-open').removeClass('active');
         var el = $(this).data('href');
         var hash = el.split('#')[1];
         var elementClick = $('#' + hash);
@@ -23,7 +21,7 @@ $(document).ready(function(){
         }, 800);
         return false;
     });
-
+    
     var headerHeight = $('header').height();
     var footerHeight = $('footer').height();
 

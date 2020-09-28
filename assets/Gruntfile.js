@@ -45,6 +45,7 @@ grunt.initConfig({
 				'../markup/js/bot.min.js': ['dist/js/bot.js'],
 				'../markup/js/contacts.min.js': ['dist/js/contacts.js'],
 				'../markup/js/reviews.min.js': ['dist/js/reviews.js'],
+				'../markup/js/training-goes.min.js': ['dist/js/training-goes.js'],
 			}
 		}
 	},
