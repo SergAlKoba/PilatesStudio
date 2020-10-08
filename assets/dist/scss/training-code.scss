@@ -169,6 +169,37 @@
                 }
             }
         }
+        .test{
+            margin: 20px 0;
+            a {
+                width: 100%;
+                font-size: 14px;
+                color: #d3571a;
+                font-weight: 400;
+                line-height: 22px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+                margin-bottom: 15px;
+                display: inline-block;
+                text-transform: uppercase;
+                padding: 7px 10px 5px 10px;
+                border: 1px solid #d3571a;
+                box-shadow: 0 6px 8px rgba(136,136,136,0.5);
+                transition: all 0.5s;
+                &:hover{
+                    color: #ffffff;
+                    background-color: #d3571a;
+                }
+            }
+            p{
+                font-size: 14px;
+                color: #030303;
+                line-height: 20px;
+                text-align: center;
+                display: inline-block;
+            }
+        }
     }
     .col{
         right: 0;
@@ -394,7 +425,7 @@
 @media screen and (min-width: 768px) {
 
     .info {
-        padding: 50px 0;
+        padding: 50px 0 5px;
         h2{
             margin-bottom: 40px;
         }
@@ -413,6 +444,20 @@
                 li{
                    width: 46%; 
                    margin: 0 2%;
+                }
+            }
+            .test {
+                margin: 40px 0 20px;
+                a {
+                    width: 46%;
+                    display: block;
+                    margin: 0 auto 20px;
+                }
+                p{
+                    width: 46%;
+                    display: block;
+                    margin: 0 auto;
+                    text-align: justify;
                 }
             }
         }
@@ -566,6 +611,18 @@
                     width: 48%;
                 }
             }
+            .test{
+                width: 600px;
+                margin: 30px auto 20px;
+                a{
+                    width: 48%;
+                }
+                p {
+                    width: 48%;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
         }
         .col {
             width: 550px;
@@ -602,7 +659,7 @@
     }
 
     .info { 
-        padding: 70px 0 40px;
+        padding: 70px 0 5px;
         &::after{
             bottom: -8%;
             height: 80%;
@@ -647,6 +704,13 @@
                         line-height: 28px;
                         padding: 9px 10px 5px 10px;
                     }
+                }
+            }
+            .test {
+                a {
+                    font-size: 18px;
+                    line-height: 28px;
+                    padding: 9px 10px 5px 10px;
                 }
             }
         }

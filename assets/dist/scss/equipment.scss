@@ -163,11 +163,31 @@ footer {
                 transition: all 0.5s;
             }
         }
+        .text-center{
+            position: relative;
+            .video-bg{
+                top: -10%;
+                left: 50%;
+                z-index: -1;
+                width: 100vw;
+                position: absolute;
+                transform: translate(-50%, 0);
+            }
+        }
     }
 }
 
 .want{
+    position: relative;
     margin-bottom: 30px;
+    .want-bg{
+        left: 50%;
+        bottom: 0;
+        z-index: -1;
+        width: 100vw;
+        position: absolute;
+        transform: translate(-50%, 0);
+    }
     .want-text{
         text-align: center;
         margin-bottom: 30px;
@@ -193,12 +213,18 @@ footer {
                 font-weight: 700;
             }
         }
+        .desc{
+            width: 200px;
+            display: block;
+            margin: 20px auto 0;
+        }
     }
     .price-item{
         width: 290px;
         margin: 0 auto;
         position: relative;
         margin-bottom: 20px;
+        background-color: #ffffff;
         border: 1px solid #ededed;
         box-shadow: 0 1px 4px rgba(0,0,0,0.3), -23px 0 20px -23px rgba(0,0,0,0.8), 23px 0 20px -23px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.1) inset;
         &:last-child{
@@ -360,6 +386,62 @@ footer {
     }
 }
 
+.equipment-text{
+    position: relative;
+    margin-bottom: 50px;
+    .title{
+        margin-bottom: 20px;
+        h3{
+            color: #070002;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: left;
+            margin-bottom: 15px;
+        }    
+    }
+    .equipment-item{
+        margin-bottom: 20px;
+    }
+    h5{
+        color: #070002;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        padding-top: 10px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    ul{
+        li{
+            color: #040000;
+            font-size: 12px;
+            line-height: 15px;
+            padding-left: 15px;
+            padding-bottom: 10px;
+            position: relative;
+            &::after{
+                content: '';
+                top: 3px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                position: absolute;
+                background: #e92626;
+            }
+        }
+    }
+}
+
+.col-2{
+	top: 0;
+	left: 0;
+	width: 100px;
+	display: none;
+	position: absolute;
+}
+
 @media screen and (min-width: 768px) {
 
     .title {
@@ -415,6 +497,34 @@ footer {
                 width: 40%;
                 float: left;
                 margin: 20px 25px 25px 0;
+            }
+        }
+    }
+
+    .col-2{
+		top: 26px;
+		left: 20px;
+		width: 130px;
+		display: block;
+    }
+    
+    .equipment-text{
+        .title {
+            h3 {
+                font-size: 28px;
+                line-height: 34px;
+                margin-bottom: 25px;
+            }
+        }
+        h5{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        ul{
+            li{
+                font-size: 18px;
+                line-height: 22px;
+                padding-bottom: 15px;
             }
         }
     }
@@ -478,10 +588,24 @@ footer {
                 font-size: 26px;
                 line-height: 36px;
             }
+            .desc{
+                width: 300px;
+                margin: 30px 0 0;
+            }
         }
         .price-item{
             width: 38%;
             margin: 0;
+        }
+    }
+
+    .equipment-text{
+        .equipment-items{
+            display: flex;
+            justify-content: space-between;
+        }
+        .equipment-item{
+            width: 46%;
         }
     }
 
@@ -499,6 +623,12 @@ footer {
     }
 
     .want{
+        .want-text {
+            .desc {
+                width: 400px;
+                margin: 130px 0 0;
+            }
+        }
         .price-item {
             border: none;
             position: relative;
@@ -578,6 +708,7 @@ footer {
                         font-size: 24px;
                         line-height: 30px;
                         margin-bottom: 8px;
+                        padding-right: 125px;
                         transition: all 0.1s;
                     }
                     span{
