@@ -575,6 +575,7 @@ footer {
     .want{
         .want-content{
             display: flex;
+            align-items: flex-start;
             justify-content: space-between;
         }
         .want-text{

@@ -13,10 +13,31 @@ $(document).ready(function(){
     reviewsSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        adaptiveHeight: true,
         nextArrow: '<button class="slick-arrow next"><img src="../img/slider-next.png"></button>',
         prevArrow: '<button class="slick-arrow prev"><img src="../img/slider-prev.png"></button>',
     });
+
+    if($(window).width() < 1360){
+
+        $('.reviews-slider .example').expandable({
+            'height': 126,
+            'more':'Читать далее...',
+            'less':'Скрыть',
+            'animation_duration': 275
+        });
+
+    }
+
+    if($(window).width() > 1360){
+
+        $('.reviews-slider .example').expandable({
+            'height': 230,
+            'more':'Читать далее...',
+            'less':'Скрыть',
+            'animation_duration': 275
+        });
+
+    }
 
 });
 

@@ -34,6 +34,7 @@
     background: -ms-linear-gradient(top, rgba(237,237,237,0) 0%, rgba(255,255,255,0.8) 41%, rgba(255,255,255,1) 70%);
     background: linear-gradient(to bottom, rgba(237,237,237,0) 0%, rgba(255,255,255,0.8) 41%, rgba(255,255,255,1) 70%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+    transition: all 0.5s;
 }
 
 .expandable .expand-bar i {
@@ -51,6 +52,10 @@
 
 .expandable.expanded .expand-bar i {
     transform: rotate(90deg);
+}
+
+.expandable.expanded .expand-bar::before{
+    display: none;
 }
 
 .expandable .expand-bar i::before, .expandable .expand-bar i::after {

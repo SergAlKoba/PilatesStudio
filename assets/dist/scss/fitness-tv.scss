@@ -51,27 +51,43 @@ footer{
     padding: 40px 0 30px;
 }
 
-.following .offer h2 {
-    font-size: 30px;
-    color: #e70f0f;
+// .following .offer h2 {
+//     font-size: 30px;
+//     color: #e70f0f;
+//     margin-bottom: 10px;
+// }
+// .following .offer h3 {
+//     font-size: 16px;
+//     color: #080808;
+//     margin-bottom: 12px;
+// }
+
+.following .offer{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.following .offer h2{
+    color: #050001;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 0px;
+    padding-bottom: 5px;
     margin-bottom: 10px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #050001;
 }
-.following .offer h3 {
+.following .offer p{
+    display: block;
     font-size: 16px;
-    color: #080808;
-    margin-bottom: 12px;
+    line-height: 20px;
+    padding-bottom: 15px;
 }
+
 .vid-kont{
 	padding-top: 22px;
-}
-.offer:after {
-    content: '';
-    width: 150px;
-    height: 1px;
-    background: #7c8b9e;
-    position: absolute;
-    left: 50%;
-    margin-left: -75px;
 }
 .following .video-box h3 {
     font-size: 14px;	
@@ -172,24 +188,23 @@ footer{
 	.following .video-box h3 {
 		font-size: 16px;
 	}
-	.offer ul li{
-		width: 49%;
-		display: inline-block;
-		vertical-align: top;
-		text-align: right;
-	}
-	.offer ul li:last-child{
-		text-align: left;
-		margin-left: 10px;
-	}
-	.following .offer h2 {
-		font-size: 60px;
-	}
-	.following .offer h3 {
-		font-size: 21px;
-		margin-bottom: 0px;
-		padding-top: 9px;
-	}
+	.following .offer{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    
+    .following .offer{
+        margin-bottom: 25px;
+    }
+    .following .offer h2{
+        h2 {
+            font-size: 38px;
+            line-height: 46px;
+            margin-bottom: 15px;
+            padding-right: 115px;
+            letter-spacing: 0.5px;
+        }
+    }
 	.video-box{
 		width: 49%;
 		display: inline-block;
@@ -207,10 +222,15 @@ footer{
 		width: 250px;
 		margin-left: -125px;
 	}
-	.following .offer h2 {
-		margin-bottom: 24px;
-		margin-right: 42px;
-	}
+    .following .offer h2{
+        width: 460px;
+            font-size: 32px;
+            padding-right: 0;
+            line-height: 38px;
+    }
+    .following .offer  p{
+        width: 460px;
+    }
 	.following .video-box h3 {
 		font-size: 18px;
     }
@@ -224,6 +244,21 @@ footer{
 
 }
 
+@media screen and (min-width: 1280px) {
+
+    .following .offer h2 {
+        width: 620px;
+        font-size: 45px;
+        line-height: 52px;
+        margin-bottom: 15px;
+    }
+    .following .offer p{
+        width: 620px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}
 @media screen and (min-width: 1340px) {
 
     .video-popup{
@@ -234,9 +269,15 @@ footer{
     }
 
     .following .offer h2 {
-		font-size: 87px;
-		text-align: left;
-		margin-left: 21px;
+        width: 740px;
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 25px;
+    }
+    .following .offer p {
+        width: 740px;
+        font-size: 22px;
+        line-height: 30px;
     }
     
 	.offer:after {
