@@ -124,12 +124,14 @@ $(document).ready(function(){
     
     $('.currency').find('li').on('click', function(){
         var sun = $(this).data('sun');
+        var old = $(this).data('old');
         var currency = $(this).data('currency');
         $(this).parent('.currency').find('li').removeClass('active');
         $(this).addClass('active');
         console.log($(this).parent('.currency').prev('.buy-content').find('.uan span'));
         $(this).parent('.currency').prev('.buy-content').find('.uan span').html(currency);
         $(this).parent('.currency').prev('.buy-content').find('.uan strong').animateNumber({ number: sun });
+        $(this).parent('.currency').prev('.buy-content').find('.uan-old strong').animateNumber({ number: old });
     });
 
     $('.contact-link').on('click', function(){

@@ -1008,6 +1008,31 @@
                                 display: inline-block;
                             }
                         }
+                        .uan-old{
+                            display: table;
+                            font-size: 20px;
+                            color: #282828;
+                            font-weight: 700;
+                            line-height: 24px;
+                            position: relative;
+                            &::after{
+                                content: '';
+                                top: 50%;
+                                left: 50%;
+                                width: 110%;
+                                height: 1px;
+                                position: absolute;
+                                background: red;
+                                transform: translate(-50%, -50%) rotate(-10deg);
+                            }
+                            span{
+                                font-size: 12px;
+                                color: #d3571a;
+                                font-weight: 400;
+                                line-height: 24px;
+                                display: inline-block;
+                            }
+                        }
                     }
                     .buy{
                         color: #3e8604;
@@ -1837,9 +1862,20 @@
     background: url('../img/lid-back-gr.jpg') no-repeat 50% 50%;
     background-size: cover;
     .collback-content{
+        .title{
+            margin-bottom: 25px;
+            h2{
+                font-size: 22px;
+                font-weight: 500;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
         .img{
             width: 200px;
-            margin: 0 auto 50px;
+            margin: 0 auto 10px;
             img{
                 width: 100%;
                 display: block;
@@ -1849,6 +1885,7 @@
             width: 280px;
             margin: 0 auto;
             .title{
+                display: none;
                 margin-bottom: 15px;
                 h2{
                     font-size: 22px;
@@ -2334,6 +2371,7 @@
             }
         }
     }
+    
   }
 
   .why-trust {
@@ -2405,6 +2443,19 @@
         .price-item{
             width: 45%;
             margin: 0 2.5% 30px;
+            .sum {
+                .buy-content {
+                    .price-sum {
+                        display: flex;
+                        align-items: center;
+                        .uan-old{
+                            display: none;
+                            margin-bottom: 0;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
   }
@@ -2683,12 +2734,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .title{
+            display: none;
+        }
         .img{
             margin: 0;
             width: 300px;
         }
         .form{
             margin: 0;
+            .title{
+                display: block;
+            }
         }
     }
   }
@@ -3152,7 +3209,7 @@
                 }
                 .links {
                     .sosial {
-                        bottom: 65px;
+                        bottom: 67px;
                         li{
                             margin: 0 12px;
                             img {
@@ -3552,7 +3609,7 @@
                     .sum{
                         .buy-content{
                             .buy{
-                                padding-right: 15px;
+                                padding-right: 3px;
                                 transform: scale(1.2);
                             }
                         }
@@ -3619,6 +3676,11 @@
                     .buy-content{
                         .buy{
                             transition: all 0.4s;
+                        }
+                        .price-sum {
+                            .uan-old{
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -4044,7 +4106,7 @@
                 }
             }
             .img {
-                right: -2%;
+                right: -5%;
                 width: 720px;
                 .you-interested-img2 {
                     left: 38%;
@@ -4650,9 +4712,4 @@
 
 }
 
-@media screen and (min-width: 1800px) {
-
-
-
-}
 

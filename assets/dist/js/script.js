@@ -67,6 +67,10 @@ $(document).ready(function(){
         $('.question-items').addClass('active');
     });
 
+    $('.question .text').on('click', function(){
+        $('.question-items').addClass('active');
+    });
+
     $('.close').on('click', function(){
         $('.question-items').removeClass('active');
     });
