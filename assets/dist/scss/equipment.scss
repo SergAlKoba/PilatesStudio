@@ -83,8 +83,8 @@ footer {
         }
         p{
             color: #040000;
-            font-size: 12px;
-            line-height: 15px;
+            font-size: 14px;
+            line-height: 17px;
             text-indent: 16px;
             padding-bottom: 10px;
         }
@@ -386,6 +386,27 @@ footer {
     }
 }
 
+.link-text{
+    color: #1346ff;
+    position: relative;
+    transition: all 0.5s;
+    &::after{
+        content: '';
+        left: 0;
+        width: 0;
+        height: 1px;
+        bottom: 0px;
+        position: absolute;
+        background: #1346ff;
+        transition: all 0.5s;
+    }
+    &:hover{
+        &::after{
+            width: 100%;
+        }   
+    }
+}
+
 .equipment-text{
     position: relative;
     margin-bottom: 50px;
@@ -431,6 +452,13 @@ footer {
                 background: #e92626;
             }
         }
+    }
+    p{
+        color: #040000;
+        font-size: 12px;
+        line-height: 15px;
+        text-indent: 16px;
+        padding-bottom: 10px;
     }
 }
 
@@ -526,6 +554,11 @@ footer {
                 line-height: 22px;
                 padding-bottom: 15px;
             }
+        }
+        p{
+            font-size: 18px;
+            line-height: 22px;
+            padding-bottom: 15px;
         }
     }
     

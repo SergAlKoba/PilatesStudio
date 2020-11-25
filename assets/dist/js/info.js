@@ -44,6 +44,8 @@ $(document).ready(function(){
         $(this).prev().toggleClass('active');
     });
 
+    $('.img-kont').zoom();
+
 });
 
 $(window).resize(function(){

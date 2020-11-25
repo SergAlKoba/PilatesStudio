@@ -32,6 +32,7 @@ grunt.initConfig({
 				'../markup/js/jquery.responsiveTabs.min.js': ['dist/js/plugin/jquery.responsiveTabs.js'],
 				'../markup/js/jquery.matchHeight.min.js': ['dist/js/plugin/jquery.matchHeight.js'],
 				'../markup/js/jquery.responsiveTabs.min.js': ['dist/js/plugin/jquery.responsiveTabs.js'],
+				'../markup/js/jquery.zoom.min.js': ['dist/js/plugin/jquery.zoom.js'],
 				'../markup/js/info.min.js': ['dist/js/info.js'],
 				'../markup/js/script.min.js': ['dist/js/script.js'],
 				'../markup/js/home.min.js': ['dist/js/home.js'],
