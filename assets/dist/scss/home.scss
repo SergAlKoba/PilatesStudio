@@ -1859,9 +1859,12 @@
 
 .collback{
     padding: 10px 0 30px;
-    background: url('../img/lid-back-gr.jpg') no-repeat 50% 50%;
+    position: relative;
+    background: url('../img/lid-back-gr.jpg') no-repeat 0% 0%;
     background-size: cover;
     .collback-content{
+        z-index: 1;
+        position: relative;
         .title{
             margin-bottom: 25px;
             h2{
@@ -2730,6 +2733,8 @@
 
   .collback{
     padding: 45px 0 35px;
+    background: url('../img/lid-back-gr.jpg') no-repeat 50% 50%;
+    background-size: cover;
     .collback-content{
         display: flex;
         align-items: center;

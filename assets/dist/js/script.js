@@ -26,7 +26,7 @@ $(document).ready(function(){
     var footerHeight = $('footer').height();
 
     $('body').css({
-        'padding-top': headerHeight,
+        'padding-top': headerHeight + 30,
         'padding-bottom': footerHeight,
     });
 
@@ -107,7 +107,7 @@ $(window).resize(function(){
     var footerHeight = $('footer').height();
 
     $('body').css({
-        'padding-top': headerHeight,
+        'padding-top': headerHeight + 30,
         'padding-bottom': footerHeight,
     });
 

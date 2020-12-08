@@ -5,7 +5,7 @@ header{
 .video-popup{
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -42,6 +42,113 @@ header{
     background: rgba(0, 0, 0, 0.5);
 }
 
+.popup-ytube{
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    transition: all 0.5s;
+    .cloze{
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: absolute;
+    }
+    .popup-content{
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        padding: 18px 20px;
+        text-align: center;
+        border-radius: 20px;
+        position: absolute;
+        background-color: #fbe9e4;
+        box-shadow: 0 0 15px rgba(0,0,0,0.8);
+        transform: translate(-50%, -50%);
+        .cloze-popup{
+            top: 10px;
+            z-index: 1;
+            right: 10px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            position: absolute;
+            &::after{
+              content: '';
+              top: 50%;
+              left: 50%;
+              width: 100%;
+              height: 2px;
+              background: #000000;
+              position: absolute;
+              transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &::before{
+              content: '';
+              top: 50%;
+              left: 50%;
+              width: 100%;
+              height: 2px;
+              background: #000000;
+              position: absolute;
+              transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+        h3{
+            font-size: 18px;
+            padding: 0 20px;
+            color: #050001;
+            font-weight: 600;
+            line-height: 22px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        p{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            padding-bottom: 10px;
+        }
+        span{
+            display: block;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            padding-bottom: 10px;
+        }
+        a{
+            display: table;
+            margin: 0 auto 0;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 32px;
+            border-radius: 24px;
+            padding: 6px 50px 4px;
+            background-color: #d3571a;
+            border: 1px solid #d3571a;
+            box-shadow: 0 6px 8px rgba(136,136,136,0.5);
+            transition: all 0.3s;
+            &:hover {
+                color: #d3571a;
+                background: #ffffff;
+            }
+        }
+        img{
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
 
 footer{
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
@@ -181,6 +288,28 @@ footer{
 }
 
 @media screen and (min-width: 768px) {
+
+    .popup-ytube{
+        right: 20px;
+        bottom: 20px;
+        width: 360px;
+        top: initial;
+        height: auto;
+        height: 290px;
+        left: initial;
+        background: rgba(0,0,0,0.0);
+        .popup-content{
+            width: 360px;
+            h3 {
+                font-size: 22px;
+                padding: 0 32px;
+                line-height: 28px;
+            }
+            a {
+                font-size: 18px;
+            }
+        }
+    }
 
     .following {
 		position: relative;
