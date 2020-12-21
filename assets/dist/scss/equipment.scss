@@ -870,6 +870,22 @@ footer {
             }
         }
     }
+
+    .equipment-text p {
+        font-size: 18px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    .equipment-text ul li {
+        font-size: 18px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    .equipment-text ul li::after {
+        top: 11px;
+    }
 	  
 }
 
