@@ -1,0 +1,210 @@
+.training-of-class {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.training-of-class .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.training-of-class .title h2 {
+    color: #050001;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.training-of-class .title h2 span {
+    color: #de1515;
+}
+
+.training-of-class .start-of-class-content .necessary {
+    width: 100%;
+}
+
+.training-of-class .start-of-class-content .start-of-class-item{
+    margin-bottom: 10px;
+}
+
+.training-of-class .start-of-class-content .start-of-class-item:last-child{
+    margin-bottom: 0;
+}
+
+.training-of-class .start-of-class-content .start-of-class-item h4 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.training-of-class .start-of-class-content .start-of-class-item h4 img{
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 120px;
+    position: absolute;
+}
+
+.training-of-class .start-of-class-content .start-of-class-item p {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+@media screen and (min-width: 768px){
+
+    .training-of-class {
+        padding-bottom: 50px;
+    }
+
+    .training-of-class .title h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .training-of-class .start-of-class-content .necessary {
+        width: 52%;
+        display: flex;
+        margin: 0 auto 20px;
+    }
+
+    .training-of-class .start-of-class-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item {
+        width: 46%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .training-of-class .title {
+        padding: 0 30px;
+        margin-bottom: 25px;
+    }
+
+    .training-of-class .title h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item h4 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 6px;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item h4 img {
+        width: 161px;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item p {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .training-of-class .start-of-class-content {
+        position: relative;
+        margin-bottom: 140px;
+    }
+
+    .training-of-class .start-of-class-items {
+        z-index: 1;
+        position: relative;
+    }
+
+    .training-of-class .start-of-class-content .necessary {
+        top: 78%;
+        left: 50%;
+        margin: 0;
+        z-index: 0;
+        width: 480px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (min-width: 1340px){
+
+    .training-of-class {
+        padding-bottom: 200px;
+    }
+
+    .training-of-class .title {
+        margin-bottom: 40px;
+    }
+
+    .training-of-class .title h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .training-of-class .start-of-class-content {
+        margin-bottom: 20px;
+    }
+
+    .training-of-class .start-of-class-content .necessary {
+        top: 68%;
+        left: 50%;
+        margin: 0;
+        z-index: 0;
+        width: 750px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item p {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item h4 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    }
+
+    .training-of-class .start-of-class-content .start-of-class-item {
+        width: 42%;
+        margin-bottom: 120px;
+    }
+
+}
+
+
+@media screen and (min-width: 2000px){
+
+    .why-trust .why-trust-content .img .why-trust-img {
+        top: 22%;
+    }
+
+}
+
+
+@media screen and (min-width: 2400px){
+
+    .why-trust .why-trust-content .img .why-trust-img {
+        top: 25%;
+        width: 890px;
+    }
+
+}

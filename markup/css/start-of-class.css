@@ -1,0 +1,216 @@
+.start-of-class {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.start-of-class .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.start-of-class .title h2 {
+    color: #050001;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.start-of-class .title h2 span {
+    color: #de1515;
+}
+
+.start-of-class .start-of-class-content .necessary {
+    width: 100%;
+}
+
+.start-of-class .start-of-class-content .start-of-class-item{
+    margin-bottom: 10px;
+}
+
+.start-of-class .start-of-class-content .start-of-class-item:last-child{
+    margin-bottom: 0;
+}
+
+.start-of-class .start-of-class-content .start-of-class-item h4 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.start-of-class .start-of-class-content .start-of-class-item h4 img{
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 120px;
+    position: absolute;
+}
+
+.start-of-class .start-of-class-content .start-of-class-item p {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+@media screen and (min-width: 768px){
+
+    .start-of-class {
+        padding-bottom: 50px;
+    }
+
+    .start-of-class .title h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .start-of-class .start-of-class-content .necessary {
+        width: 70%;
+        display: flex;
+        margin: 0 auto 20px;
+    }
+
+    .start-of-class .start-of-class-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item {
+        width: 46%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .start-of-class .title {
+        padding: 0 30px;
+        margin-bottom: 25px;
+    }
+
+    .start-of-class .title h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item h4 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 6px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item h4 img {
+        width: 161px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item p {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item {
+        width: 46%;
+        margin-bottom: 90px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item:nth-child(3){
+        width: 31%;
+        margin-bottom: 90px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item:nth-child(4){
+        width: 40%;
+        margin-bottom: 90px;
+        transform: translate(40px, 1px);
+    }
+
+    .start-of-class .start-of-class-content {
+        position: relative;
+    }
+
+    .start-of-class .start-of-class-items {
+        z-index: 1;
+        position: relative;
+    }
+
+    .start-of-class .start-of-class-content .necessary {
+        top: 63%;
+        left: 44%;
+        margin: 0;
+        z-index: 0;
+        width: 580px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (min-width: 1340px){
+
+    .start-of-class {
+        padding-bottom: 200px;
+    }
+
+    .start-of-class .title {
+        margin-bottom: 40px;
+    }
+
+    .start-of-class .title h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .start-of-class .start-of-class-content .necessary {
+        top: 71%;
+        left: 41%;
+        margin: 0;
+        z-index: 0;
+        width: 908px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item p {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item h4 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    }
+
+    .start-of-class .start-of-class-content .start-of-class-item {
+        width: 46%;
+        margin-bottom: 120px;
+    }
+
+}
+
+
+@media screen and (min-width: 2000px){
+
+    .why-trust .why-trust-content .img .why-trust-img {
+        top: 22%;
+    }
+
+}
+
+
+@media screen and (min-width: 2400px){
+
+    .why-trust .why-trust-content .img .why-trust-img {
+        top: 25%;
+        width: 890px;
+    }
+
+}

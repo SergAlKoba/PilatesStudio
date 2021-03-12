@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/start-of-class.css">
 </head>
 
 <body>
@@ -340,6 +341,35 @@
                             </dd>
                         </div>
                     </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="start-of-class">
+        <div class="container">
+            <div class="title">
+                <h2>ЧТО НЕОБХОДИМО ДЛЯ <span> НАЧАЛА ЗАНЯТИЙ</span></h2>
+            </div>
+            <div class="start-of-class-content">
+                <img src="../img/img-compressed/necessary.jpg" alt="" class="necessary">
+                <div class="start-of-class-items">
+                    <div class="start-of-class-item wow slideInLeft"  data-wow-delay="0.1s">
+                        <h4>Доступ к интернету <img src="../img/img-compressed/trigger-01.jpg" alt=""></h4>
+                        <p>Страничка личного кабинета студента адаптирована под любое устройство. Для начала занятий Вам понадобится смартфон, ноутбук, планшет или десктопный ПК.</p>
+                    </div>
+                    <div class="start-of-class-item wow slideInRight"  data-wow-delay="0.3s">
+                        <h4>Пространство  2 на 2 метра <img src="../img/img-compressed/trigger-02.jpg" alt=""></h4>
+                        <p>Минимальное пространство в помещении, на котором можно поставить планшет или ноутбук. Для удобства восприятия рекомендуется 1,5 - 2 метра от вас.</p>
+                    </div>
+                    <div class="start-of-class-item wow slideInLeft" data-wow-delay="0.5s">
+                        <h4>Минимальный инвентарь <img src="../img/img-compressed/trigger-03.jpg" alt=""></h4>
+                        <p>Для начала обучения желательно иметь коврик для фитнеса. Если его нет, можно заменить пледом или просто удобно расположиться на ковре.</p>
+                    </div>
+                    <div class="start-of-class-item wow slideInRight" data-wow-delay="0.7s">
+                        <h4>Малое оборудование <img src="../img/img-compressed/trigger-04.jpg" alt=""></h4>
+                        <p>При изучении воркшопов по работе с малым оборудованием необходимо иметь фоам роллер, резинки, изотоническое кольцо, фитбол и минибол.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -771,19 +801,19 @@
                 </div>
                 <div class="why-trust-items">
                     <div class="why-trust-item why-trust-item1">
-                        <div class="num">9 <span>лет</span></div>
+                        <div class="num"><i class="numscroller" data-min='0' data-max='9' data-delay='1' data-increment='1'>0</i> <span>лет</span></div>
                         <p>опыта разработки специальных курсов, индивидуальных, групповых и он-лайн программ обучения</p>
                     </div>
                     <div class="why-trust-item why-trust-item2">
-                        <div class="num">11 <span>лет</span></div>
+                        <div class="num"><i class="numscroller" data-min='0' data-max='11' data-delay='1.5' data-increment='1'>0</i> <span>лет</span></div>
                         <p>успешной работы в лучших фитнес клубах и популяризация Пилатеса в он-лайн и офф-лайн проектах</p>
                     </div>
                     <div class="why-trust-item why-trust-item3">
-                        <div class="num"><span>более</span> 720</div>
+                        <div class="num"><span>более</span><i class="numscroller" data-min='0' data-max='720' data-delay='3' data-increment='10'>0</i></div>
                         <p>тренеров, обученных мной, трудоустроены в фитнес клубах разных стран мира</p>
                     </div>
                     <div class="why-trust-item why-trust-item4">
-                        <div class="num"><span>более</span> 7000</div>
+                        <div class="num"><span>более</span> <i class="numscroller" data-min='0' data-max='7000' data-delay='6' data-increment='100'>0</i></div>
                         <p>клиентов тренируются у методистов, которые прошли мое обучение, в разных странах мира</p>
                     </div>
                 </div>
@@ -3810,7 +3840,7 @@
                 <div class="img">
                     <img src="../img/lid-question.png" alt="">
                 </div>
-                <div class="form">
+                <div class="form wow fadeInUp" data-wow-offset="100" data-wow-delay="0.2s">
                     <div class="title">
                         <h2>Уже здесь?</h2>
                         <h3>Остались вопросы? Задавайте)))</h3>
@@ -3895,14 +3925,14 @@
 
     <footer>
         <div class="container">
-            <nav>
+            <nav class="wow fadeInDown" data-wow-offset="100" data-wow-duration="0.5s">
                 <ul>
                     <li><a href="javascript:void(0)" target="_blank">Публичная оферта</a></li>
                     <li><a href="javascript:void(0)" target="_blank">Политика Конфиденциальности</a></li>
                     <li><a href="javascript:void(0)" target="_blank">Безопасность информации платежной карты</a></li>
                 </ul>
             </nav>
-            <div class="footer-content">
+            <div class="footer-content wow fadeInUp" data-wow-offset="100" data-wow-duration="0.5s" data-wow-delay="0.2s">
                 <div class="footer-left">
                     <a href="index.html" class="logo">
                         <img src="../img/logo.png" alt="">
@@ -3956,6 +3986,7 @@
     <script src="../js/jquery.responsiveTabs.min.js"></script>
     <script src="../js/jquery.expandable.min.js"></script>
     <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/numscroller-1.0.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/accordion.min.js"></script>
