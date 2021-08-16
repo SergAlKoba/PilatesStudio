@@ -1,0 +1,8 @@
+.pin2{
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    background: red;
+}

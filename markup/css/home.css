@@ -15,3 +15,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .why-trust .why-trust-content .why-trust-items .why-trust-item .num i{
     font-style: normal;
 }
+
+#pin2{
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    background: red;
+}

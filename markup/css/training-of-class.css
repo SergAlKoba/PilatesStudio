@@ -20,7 +20,9 @@
 }
 
 .training-of-class .start-of-class-content .necessary {
-    width: 100%;
+    width: 70%;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .training-of-class .start-of-class-content .start-of-class-item{
@@ -121,7 +123,7 @@
 
     .training-of-class .start-of-class-content {
         position: relative;
-        margin-bottom: 140px;
+        margin-bottom: 120px;
     }
 
     .training-of-class .start-of-class-items {
@@ -130,11 +132,11 @@
     }
 
     .training-of-class .start-of-class-content .necessary {
-        top: 78%;
+        top: 88%;
         left: 50%;
         margin: 0;
         z-index: 0;
-        width: 480px;
+        width: 360px;
         position: absolute;
         transform: translate(-50%, -50%);
     }
@@ -144,7 +146,7 @@
 @media screen and (min-width: 1340px){
 
     .training-of-class {
-        padding-bottom: 200px;
+        padding-bottom: 120px;
     }
 
     .training-of-class .title {
@@ -161,11 +163,11 @@
     }
 
     .training-of-class .start-of-class-content .necessary {
-        top: 68%;
+        top: 70%;
         left: 50%;
         margin: 0;
         z-index: 0;
-        width: 750px;
+        width: 550px;
         position: absolute;
         transform: translate(-50%, -50%);
     }
