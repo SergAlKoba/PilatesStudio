@@ -6,3 +6,137 @@
     position: absolute;
     background: red;
 }
+
+.professoon .professoon-content .professoon-list .list::after{
+    transform: translate(-50%, -15px);
+    transition: all 0.3s;
+}
+
+.professoon .professoon-content .professoon-list .list.active::after{
+    transform: translate(-50%, 0);
+}
+
+.believe-yourself-content {
+    width: 290px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.believe-yourself-content .believe-img{
+    width: 100%;
+}
+
+.believe-yourself-content ul{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.believe-yourself-content ul li{
+    width: 100px;
+    position: absolute;
+}
+
+.believe-yourself-content ul li:nth-child(1){
+    left: -4px;
+    bottom: 48px;
+}
+.believe-yourself-content ul li:nth-child(2){
+    left: 12px;
+    bottom: 105px;
+}
+.believe-yourself-content ul li:nth-child(3){
+    right: 25px;
+    bottom: 138px;
+    text-align: right;
+}
+.believe-yourself-content ul li:nth-child(4){
+    width: 110px;
+    right: -5px;
+    bottom: 88px;
+    text-align: right;
+}
+.believe-yourself-content ul li:nth-child(5){
+    width: 88px;
+    right: -5px;
+    bottom: 18px;
+    text-align: right;
+}
+
+.believe-yourself-content ul li h4{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    margin-bottom: 3px;
+}
+
+.believe-yourself-content ul li p{
+    font-size: 6px;
+    color: #a8a3a3;
+    font-weight: 700;
+    line-height: 7px;
+}
+
+@media (min-width: 768px) {
+
+    .believe-yourself {
+        margin-bottom: 50px;
+    }
+
+    .believe-yourself .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .believe-yourself-content {
+        width: 485px;
+        margin-bottom: 30px;
+    }
+
+    .believe-yourself-content ul li {
+        width: 140px;
+    }
+
+    .believe-yourself-content ul li h4 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 3px;
+    }
+
+    .believe-yourself-content ul li p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .believe-yourself-content ul li:nth-child(1) {
+        left: 28px;
+        bottom: 102px;
+    }
+
+    .believe-yourself-content ul li:nth-child(2) {
+        left: 55px;
+        bottom: 208px;
+    }
+
+    .believe-yourself-content ul li:nth-child(3) {
+        width: 140px;
+        right: 100px;
+        bottom: 252px;
+    }
+    .believe-yourself-content ul li:nth-child(4) {
+        right: 45px;
+        width: 150px;
+        bottom: 180px;
+    }
+    .believe-yourself-content ul li:nth-child(5) {
+        right: 28px;
+        bottom: 66px;
+        width: 135px;
+    }
+
+}
