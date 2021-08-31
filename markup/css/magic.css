@@ -4,7 +4,8 @@
 
 .professoon .professoon-content .professoon-list .list::after{
     transform: translate(-50%, -15px);
-    transition: all 0.3s;
+    transition: all 0.7s;
+    transition-delay: 0.4s;
 }
 
 .professoon .professoon-content .professoon-list .list.active::after{
