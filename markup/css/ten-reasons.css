@@ -64,6 +64,10 @@ header{background:rgba(0,0,0,0.03)}.wrapper{padding:30px 0 0 0;position:relative
     text-indent: 16px;
 }
 
+.fag{
+    padding-top: 50px;
+}
+
 @media screen and (min-width: 768px) {
 
     .ten-video .ten-video-content .text p {
@@ -75,6 +79,10 @@ header{background:rgba(0,0,0,0.03)}.wrapper{padding:30px 0 0 0;position:relative
     .ten-video .ten-video-content .img .video .play {
         width: 60px;
         height: 42px;
+    }
+
+    .fag{
+        padding-top: 70px;
     }
 
 }
@@ -102,6 +110,10 @@ header{background:rgba(0,0,0,0.03)}.wrapper{padding:30px 0 0 0;position:relative
 
     .ten-video .ten-video-content .text{
         width: 48%;
+    }
+
+    .fag{
+        padding-top: 110px;
     }
 
 }

@@ -1,0 +1,309 @@
+.additional-materials .footer{
+    box-shadow: 0 -2px 2px rgb(0 0 0 / 10%);
+}
+
+.additional-materials {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.additional-materials .title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.additional-materials .title .pencil-title{
+    top: 0;
+    right: 0;
+    display: none;
+    position: absolute;
+}
+
+.additional-materials .title h2 {
+    color: #050001;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #050001;
+}
+
+.additional-materials .link-dow{
+    position: relative;
+    margin-bottom: 40px;
+    border: 2px solid #1caff7;
+    border-radius: 0 15px 15px 5px;
+    transition: all 0.2s;
+}
+
+.additional-materials .link-dow:hover{
+    box-shadow: 0 0px 40px rgb(65 175 248 / 40%);
+}
+
+.additional-materials .link-folder{
+    top: -21px;
+    left: -2px;
+    width: 110px;
+    position: absolute;
+}
+
+.additional-materials .link-dow {
+    padding: 15px;
+}
+
+.additional-materials .link-dow ul li{
+    margin-bottom: 10px;
+}
+
+.additional-materials .link-dow ul li a{
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 4px 10px 2px 10px;
+    border: 1px solid #d3571a;
+    background-color: #d3571a;
+    box-shadow: 0 6px 8px rgba(136,136,136,0.5);
+    transition: all 0.5s;
+}
+
+.additional-materials .link-dow ul li a:hover{
+    color: #d3571a;
+    background-color: transparent;
+}
+
+.additional-materials .link-dow p{
+    color: #030000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    position: relative;
+    padding-bottom: 12px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.videocontent{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.vid-kont{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.vid-kont .video-box{
+    margin-bottom: 20px;
+}
+
+.videocontent .ytube {
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+.link-img-content .link-img img{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 30%), -23px 0 20px -23px rgb(0 0 0 / 80%), 23px 0 20px -23px rgb(0 0 0 / 80%), 0 0 40px rgb(0 0 0 / 10%) inset;
+}
+
+.link-img-content .link-img{
+    margin-bottom: 20px;
+}
+
+.link-img-content .link-img:last-child{
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .additional-materials {
+        padding-bottom: 120px;
+    }
+
+    .additional-materials .title {
+        text-align: left;
+        margin-bottom: 60px;
+    }  
+
+    .additional-materials .title .pencil-title{
+        width: 200px;
+        display: block;
+    }
+
+    .additional-materials .title h2 {
+        font-size: 38px;
+        line-height: 46px;
+        margin-bottom: 15px;
+        padding-right: 230px;
+        letter-spacing: 0.5px;
+    }
+
+    .additional-materials .link-folder {
+        top: -30px;
+        left: -2px;
+        width: 160px;
+        
+    }
+
+    .additional-materials .link-dow {
+        margin-bottom: 60px;
+        padding: 20px 20px 0 20px;
+    }
+
+    .additional-materials .link-dow ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.5%;
+        justify-content: center;
+    }
+
+    .additional-materials .link-dow ul li{
+        width: 47%;
+        margin: 0 1.5% 20px;
+    }
+
+    .additional-materials .link-dow ul li a {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 8px 10px 6px 10px;
+    }
+
+    .additional-materials .link-dow p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .vid-kont {
+        margin: 0 -2%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .video-box {
+        width: 46%;
+        margin: 5px 2% 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .additional-materials {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .additional-materials .title h2 {
+        padding-top: 50px;
+        font-size: 32px;
+        padding-right: 0;
+        line-height: 38px;
+    }
+
+    .additional-materials .title .pencil-title{
+        width: 280px;
+    }
+
+    .additional-materials .link-folder {
+        top: -31px;
+    }
+
+    .additional-materials .link-dow {
+        margin-bottom: 70px;
+        padding: 30px 30px 0 30px;
+    }
+
+    .additional-materials .link-dow ul li {
+        margin: 0 1.5% 30px;
+    }
+
+    .link-img-content .link-img {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .link-img-content .link-img img{
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .link-img-content .link-img ul{
+        margin: 0;
+        width: 48%;
+    }
+
+    .link-img-content .link-img ul li{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .additional-materials .title h2 {
+        font-size: 45px;
+        line-height: 52px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+
+    .additional-materials .title {
+        margin-bottom: 80px;
+    }
+
+    .additional-materials .title .pencil-title {
+        width: 360px;
+    }
+
+    .additional-materials .title h2 {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 25px;
+    }
+
+    .additional-materials .link-folder {
+        top: -35px;
+        width: 180px;
+    }
+
+    .additional-materials .link-dow {
+        margin-bottom: 90px;
+    }
+
+    .additional-materials .link-dow p {
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    .additional-materials .link-dow ul li a {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 12px 10px 10px 10px;
+    }
+
+}
+
+
+
+

@@ -195,6 +195,17 @@
     display: inline-block;
 }
 
+.info{
+    z-index: 1;
+    position: relative;
+}
+
+.fag{
+    z-index: 0;
+    padding-top: 40px;
+    position: relative;
+}
+
 @media screen and (min-width: 768px) {
 
     .popup-img-reestr .cloze-popup{
@@ -240,6 +251,10 @@
         display: none;
     }
 
+    .fag{
+        padding-top: 60px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -283,4 +298,7 @@
         width: 22px;
     }
 
+    
+
 }
+
